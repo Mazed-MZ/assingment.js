@@ -6,6 +6,33 @@ function kilometerToMeter(km){
 }
 
 
+
+// budgetCalculator
+function budgetCalculator(numbersOfItems){
+    var price = numbersOfItems[0];
+    for(var i = 0; i < numbersOfItems.length; i++){
+        price = numbersOfItems[i];
+        if(numbersOfItems[0]){
+            price = numbersOfItems * 50;
+        }
+        else if(numbersOfItems[1]){
+            var mobile = numbersOfItems[0] * 50;
+            var remaining = numbersOfItems[0] - numbersOfItems[1];
+            var phone = remaining * 100;
+            price = mobile + phone;
+        }
+        else{
+            var mobile = numbersOfItems[0] * 50;
+            var phone = numbersOfItems[1] * 100;
+            var remaining = numbersOfItems[2] - (numbersOfItems[0] + numbersOfItems[1]);
+            var laptop = remaining * 500;
+            price = mobile + phone + laptop;
+        }
+    }    
+    return price;
+}
+
+
 // hotelCost
 
 function hotelCost(days){
