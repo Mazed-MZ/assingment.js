@@ -1,3 +1,7 @@
+
+
+
+
 // kilometerToMeter
 
 function kilometerToMeter(km){
@@ -7,7 +11,10 @@ function kilometerToMeter(km){
 
 
 
+
+
 // budgetCalculator
+
 function budgetCalculator(numbersOfItems){
     var price = numbersOfItems[0];
     for(var i = 0; i < numbersOfItems.length; i++){
@@ -33,6 +40,9 @@ function budgetCalculator(numbersOfItems){
 }
 
 
+
+
+
 // hotelCost
 
 function hotelCost(days){
@@ -55,6 +65,8 @@ function hotelCost(days){
     }
     return amount;
 }
+
+
 
 
 
